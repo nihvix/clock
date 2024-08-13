@@ -45,9 +45,9 @@ body {
     border-radius: 100%;
 }
 
-/* ====================
-        ANALOG
-   ==================== */
+/* ==============================
+                ANALOG
+   ============================== */
 #center {
     /*---Ajustamos la posición al centro de los bloques del reloj*/
     position: absolute;
@@ -70,42 +70,38 @@ body {
 #minsHand,
 #hoursHand {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #222;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    border-radius: 15px;
+    width: 2px;
 }
 
-/*Superponemos las agujas del reloj //Clock hands overlap*/
+/*Superponemos las agujas del reloj con zindex//Clock hands overlap*/
 #secsHand {
     z-index: 5;
+    height: 170px;
     background-color: red;
 }
 
 #minsHand {
     z-index: 4;
-    background-color: blue;
+    width: 3px;
+    height: 140px;
+    background-color: #222;
 }
 
 #hoursHand {
-    z-index: 4;
-    background-color: greenyellow;
+    z-index: 3;
+    width: 4px;
+    height: 100px;
+    background-color: #222;
 }
 
-/*Las colocamos en el centro*/
-#secsHand::before,
-#minsHand::before,
-#hoursHand::before {
-    content: "";
-    display: block;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    width: 5px;
-    height: 150px;
-    background-color: rebeccapurple;
-    transform: translate(-50%, -100%);
-    border-radius: 15px;
-}
+/*========== MARKS ==========*/
+
 
 /* ====================
         DIGITAL
