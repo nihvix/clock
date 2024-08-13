@@ -41,13 +41,29 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 5px 5px 20px #ffffff, inset -5px -5px 20px #8d8d8d;
+    /*inset para borde interno*/
     border-radius: 100%;
 }
 
 /* ====================
         ANALOG
    ==================== */
-
+#center {
+    /*---Ajustamos la posición al centro de los bloques del reloj*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    /*Para que esté sobre el resto del contenido*/
+    /*---Estilo del círculo central*/
+    background-color: #222;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 2px solid lightgrey;
+    /*Distinguir las manecillas del centro*/
+}
 
 /* ====================
         DIGITAL
