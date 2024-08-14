@@ -62,6 +62,8 @@ body {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -100%);
+    transform-origin: bottom;
+    /*Para que todas las agujas mantengan el mismo eje de rotación (parte inferior de la aguja)*/
     border-radius: 15px;
     width: 2px;
     background-color: #222;
