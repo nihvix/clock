@@ -16,31 +16,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 20px #ffffff, -5px -5px 20px #8d8d8d;
+    box-shadow: 5px 5px 20px #ffffff, -5px -5px 20px #7f7f7f;
     border-radius: 100%;
 }
 
-/*----------EJEMPLO USANDO BEFORE Y UN SOLO MAIN CONTAINER---------
-#mainContainer::before{
-    content:"";
-    height: 350px;
-    width: 350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: inset 5px 5px 20px #ffffff, inset -5px -5px 20px #8d8d8d;
-    border-radius: 100%;
-}*/
-
 #innerContainer {
-    height: 350px;
-    width: 350px;
+    height: 360px;
+    width: 360px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: inset 5px 5px 20px #ffffff, inset -5px -5px 20px #8d8d8d;
+    box-shadow: inset 5px 5px 20px #ffffff, inset -5px -5px 20px #7f7f7f;
     /*inset para borde interno*/
     border-radius: 100%;
 }
@@ -77,6 +64,7 @@ body {
     transform: translate(-50%, -100%);
     border-radius: 15px;
     width: 2px;
+    background-color: #222;
 }
 
 /*Superponemos las agujas del reloj con zindex//Clock hands overlap*/
@@ -89,15 +77,13 @@ body {
 #minsHand {
     z-index: 3;
     width: 3px;
-    height: 140px;
-    background-color: #222;
+    height: 150px;
 }
 
 #hoursHand {
     z-index: 2;
     width: 4px;
-    height: 100px;
-    background-color: #222;
+    height: 110px;
 }
 
 /*========== MARKS ==========*/
@@ -113,12 +99,57 @@ body {
     z-index: 4;
 }
 
+#marks div:nth-child(3n) {
+    background-color: darkred;
+    height: 20px;
+}
+
 #marks div:nth-child(1) {
     transform: rotate(30deg) translateY(-170px);
 }
 
 #marks div:nth-child(2) {
-    transform: rotate(60deg) translateY(-170px);
+    transform: rotate(60deg) translateY(-167px);
+}
+
+#marks div:nth-child(3) {
+    transform: rotate(90deg) translateY(-164px);
+}
+
+#marks div:nth-child(4) {
+    transform: rotate(120deg) translateY(-161px);
+}
+
+#marks div:nth-child(5) {
+    transform: rotate(150deg) translateY(-158px);
+}
+
+#marks div:nth-child(6) {
+    transform: rotate(180deg) translateY(-155px);
+}
+
+#marks div:nth-child(7) {
+    transform: rotate(210deg) translateY(-158px);
+}
+
+#marks div:nth-child(8) {
+    transform: rotate(240deg) translateY(-163px);
+}
+
+#marks div:nth-child(9) {
+    transform: rotate(270deg) translateY(-167px);
+}
+
+#marks div:nth-child(10) {
+    transform: rotate(300deg) translateY(-170px);
+}
+
+#marks div:nth-child(11) {
+    transform: rotate(330deg) translateY(-173px);
+}
+
+#marks div:nth-child(12) {
+    transform: rotate(360deg) translateY(-173px);
 }
 
 /* ====================
