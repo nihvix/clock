@@ -16,7 +16,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 20px #ffffff, -5px -5px 20px #7f7f7f;
+    box-shadow: 5px 5px 20px #ffffff, -5px -5px 20px #555555;
     border-radius: 100%;
 }
 
@@ -27,7 +27,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: inset 5px 5px 20px #ffffff, inset -5px -5px 20px #7f7f7f;
+    box-shadow: inset 5px 5px 20px #ffffff, inset -5px -5px 20px #555555;
     /*inset para borde interno*/
     border-radius: 100%;
 }
@@ -133,7 +133,7 @@ body {
 }
 
 #marks div:nth-child(8) {
-    transform: rotate(240deg) translateY(-163px)  translateX(-2px);
+    transform: rotate(240deg) translateY(-163px) translateX(-2px);
 }
 
 #marks div:nth-child(9) {
@@ -155,3 +155,28 @@ body {
 /* ====================
         DIGITAL
    ==================== */
+
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url(./Digital7Mono-Yz9J4.ttf) format('truetype');
+}
+
+#timeContainer {
+    /*Establecemos su posición dentro del reloj*/
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translate(-50%, -50%);
+    /*Estilo del bloque*/
+    height: 25px;
+    width: 110px;
+    box-shadow: inset 2px 0px 5px #555555, inset 10px -3px 10px #ffffff;
+    /*Estilo contenido del bloque (texto hora)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Digital-7 Mono', serif;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 600;
+}
