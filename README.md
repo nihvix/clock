@@ -9,3 +9,4 @@
 #### nth-child() selector.
 #### setInterval function.
 #### Date object.
+#### Use of translate and rotate on CSS.
